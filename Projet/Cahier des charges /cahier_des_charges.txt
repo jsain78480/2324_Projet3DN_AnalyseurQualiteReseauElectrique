@@ -19,4 +19,14 @@ Enregistrement des données :
 Sécurité : 
 - Le système doit garantir la sécurité de l'utilisateur
 
+Matériels utilisés :
+- Câble triphasé avec connecteur industriel 
+- Coffret électrique
+- Disjoncteur différentiel
+- Pince ampéremétrique
+- Carte PCB
+- STM32
+
+
+
 
