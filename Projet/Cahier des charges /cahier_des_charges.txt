@@ -22,11 +22,17 @@ Sécurité :
 Matériels utilisés :
 - Câble triphasé avec connecteur industriel 
 - Coffret électrique
+- Résistance de puissance pour débiter du courant
 - Disjoncteur différentiel
 - Pince ampéremétrique
 - Carte PCB
 - STM32
 
-
+Spécifications techniques : 
+- Tensions MAX = 400V
+- Courant MAX = 
+- Puissances Actives MAX = 
+- Puissances Réactive MAX = 
+- Puissances Apparentes MAX = 
 
 
