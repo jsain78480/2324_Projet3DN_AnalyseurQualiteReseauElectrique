@@ -8,4 +8,4 @@ Ce dispositif permet :
   - De prélever le spectre et en ressortir les harmoniques
   - D'afficher sur un écran les mesures instantannées
   - D'envoyer via ZIGBEE les mesures temporelles
-  - Gérer des alertes si le réseau comporte des problèmes
+  - Gérer des alertes si le réseau comporte des problèmes test
