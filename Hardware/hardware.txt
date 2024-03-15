@@ -26,3 +26,11 @@ https://fr.farnell.com/analog-devices/max6795tpsd2/regulateur-lineaire-3-3v-0-3a
 
 Tension d'entrée : Provient du traco avec +15v
 Tension de sortie : 3,3v pour alimenter le STM, l'écran, les LEDS, etc
+
+// Pour l'appareil I2C PCF8574
+
+https://controllerstech.com/i2c-lcd-in-stm32/
+
+// Pour LCD LM016L
+
+
