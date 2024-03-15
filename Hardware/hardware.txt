@@ -10,3 +10,10 @@ On a Vin = 230 V au maximum, donc R1 = Vin (au maximum) / Iin = 230/10mA = 2.3 K
 On a Vout = 3.3 V au maximum, donc Rm = Vout (au maximum) / Is = 3.3/25mA = 132 ohm.
 
 En conclusion, le taux de la tension est : Vout/Vin = 3.3/230 = 0.0143.  
+
+// Pour le régulateur linéaire
+
+https://fr.farnell.com/analog-devices/max6795tpsd2/regulateur-lineaire-3-3v-0-3a/dp/2799272
+
+Tension d'entrée : Provient du traco avec +15v
+Tension de sortie : 3,3v pour alimenter le STM, l'écran, les LEDS, etc
