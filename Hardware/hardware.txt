@@ -12,6 +12,8 @@ On a Vout = 3.3 V au maximum, donc Rm = Vout (au maximum) / Is = 3.3/25mA = 132 
 En conclusion, le taux de la tension est : Vout/Vin = 3.3/230 = 0.0143.  
 
 //U2 : AOP
+Tension d'entrée : V1(Vout de U1)
+Tension de sortie : V2
 
 //U3 : MAX 6795 pour amlimenter le STM32
 Tension d'entrée : +15 V
