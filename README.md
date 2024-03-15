@@ -9,4 +9,4 @@ Ce dispositif permet :
   - D'afficher sur un écran les mesures instantannées
   - D'envoyer via ZIGBEE les mesures temporelles
   - Gérer des alertes si le réseau comporte des problèmes test
- test test
+
