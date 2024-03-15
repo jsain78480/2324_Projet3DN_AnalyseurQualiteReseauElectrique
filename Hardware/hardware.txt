@@ -1,1 +1,12 @@
+//Pour calculer les résistances de l'utilisation de Capteur de la tension ( LEM LV 25-P) 
 
+Selon le datasheet "Voltage Transducer LV 25-P", on sait que :
+Taux de conversion = 2500 : 1000
+Courant Is = 25 mA
+Donc conrant Iin = 10 mA
+
+On a Vin = 230 V au maximum, donc R1 = Vin (au maximum) / Iin = 230/10mA = 2.3 Kohm, la puissance de l'entrée est 2.3 HZ.
+
+On a Vout = 3.3 V au maximum, donc Rm = Vout (au maximum) / Is = 3.3/25mA = 132 ohm.
+
+En conclusion, le taux de la tension est : Vout/Vin = 3.3/230 = 0.0143.  
