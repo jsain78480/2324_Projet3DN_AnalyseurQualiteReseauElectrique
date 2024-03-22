@@ -12,6 +12,34 @@ Déclenchement de la conversion : Configurez le déclenchement de la conversion 
 
 Une fois que l'ADC a échantillonné le signal, vous pouvez convertir la valeur numérique obtenue en tension en utilisant la formule :
 
+Tension (en volts)
+=
+Valeur num
+e
+ˊ
+rique
+2
+R
+e
+ˊ
+solution
+−
+1
+×
+Vref
+Tension (en volts)= 
+2 
+R 
+e
+ˊ
+ solution
+ −1
+Valeur num 
+e
+ˊ
+ rique
+​
+ ×Vref
 
 Ensuite, vous pouvez transmettre cette valeur de tension sur l'UART pour l'affichage.
 
