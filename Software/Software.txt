@@ -1,12 +1,12 @@
-Pour échantillonner un signal sinusoïdal de 50 Hz sur un ADC d'un microcontrôleur STM32 avec une plage de tension de -3.3V à 3.3V et d'afficher la valeur de la tension sur l'UART, voici les paramètres à prendre en compte pour configurer l'ADC :
+Pour échantillonner un signal sinusoïdal de 50 Hz sur un ADC d'un microcontrôleur STM32 avec une plage de tension de -3.3V à 3.3V et d'afficher la valeur de la tension sur l'UART, voici les paramètres que nous avons choisi pour configurer l'ADC :
 
-Résolution (nombre de bits) : Choisissez la résolution appropriée en fonction de la précision souhaitée. Pour une plage de tension de -3.3V à 3.3V, une résolution de 12 bits est généralement suffisante, ce qui permet d'avoir une précision d'environ 0.8 mV par échantillon.
+Résolution (nombre de bits) : Pour une plage de tension de -3.3V à 3.3V, une résolution de 12 bits est suffisante, ce qui permet d'avoir une précision d'environ 0.8 mV par échantillon.
 
-Tension de référence (Vref) : Configurez la tension de référence de l'ADC à 3.3V, puisque c'est la plage de tension que vous utilisez. Assurez-vous que la tension de référence correspond à la tension d'alimentation du microcontrôleur ou utilisez une référence externe stable si nécessaire.
+Tension de référence (Vref) : 3.3V de la carte, puisque c'est la plage de tension utilisé. 
 
-Mode de fonctionnement : Configurez l'ADC en mode de conversion unique (single conversion mode) pour échantillonner le signal une seule fois à chaque déclenchement.
+Mode de fonctionnement : ADC en mode de conversion unique (single conversion mode) pour échantillonner le signal une seule fois à chaque déclenchement.
 
-Fréquence d'échantillonnage (Fs) : Choisissez une fréquence d'échantillonnage suffisamment élevée pour éviter le repliement de spectre (aliasing). Pour échantillonner un signal sinusoïdal de 50 Hz, vous devez respecter le théorème d'échantillonnage de Nyquist qui stipule que la fréquence d'échantillonnage doit être au moins deux fois la fréquence maximale du signal d'entrée, donc une fréquence d'échantillonnage d'au moins 100 Hz est nécessaire. Cependant, pour des raisons de précision et de traitement du signal, il est recommandé de choisir une fréquence d'échantillonnage plus élevée, par exemple 1 kHz ou plus.
+Fréquence d'échantillonnage (Fs) : Pour échantillonner un signal sinusoïdal de 50 Hz, il faut respecter le théorème d'échantillonnage de Nyquist qui stipule que la fréquence d'échantillonnage doit être au moins deux fois la fréquence maximale du signal d'entrée, donc une fréquence d'échantillonnage d'au moins 100 Hz est nécessaire. Cependant, pour des raisons de précision et de traitement du signal, on a choisi 1kHz, avec ARR = 1000, PSC = 216
 
 Déclenchement de la conversion : Configurez le déclenchement de la conversion de l'ADC à l'aide d'une minuterie interne ou externe. Vous pouvez choisir de déclencher la conversion à intervalles réguliers ou en fonction d'un événement externe, selon vos besoins.
 
