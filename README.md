@@ -10,4 +10,3 @@ Ce dispositif permet :
   - D'envoyer via ZIGBEE les mesures temporelles
   - Gérer des alertes si le réseau comporte des problèmes test
 
-test hicham
