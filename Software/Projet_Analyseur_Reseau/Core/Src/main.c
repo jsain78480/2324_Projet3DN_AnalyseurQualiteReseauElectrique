@@ -27,6 +27,8 @@
 /* USER CODE BEGIN Includes */
 #include "stm32f7xx_hal.h"
 #include <stdio.h>
+#include <string.h>
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -66,13 +68,26 @@ int __io_putchar(int chr)
 }
 
 // Déclaration des handles utilisés
-extern ADC_HandleTypeDef hadc3;
-extern UART_HandleTypeDef huart1;
-extern TIM_HandleTypeDef htim8;
+//extern ADC_HandleTypeDef hadc3;
+//extern UART_HandleTypeDef huart1;
+//extern TIM_HandleTypeDef htim8;
+
+uint16_t adcValue;
+uint8_t adc_available = 0;
+uint32_t test = 0;
 
 // Buffer pour stocker la chaîne de caractères à envoyer via l'UART
 char uartBuffer[50];
 
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+{
+	if (ADC3 == hadc->Instance)
+	{
+		adcValue = HAL_ADC_GetValue(&hadc3);
+		test++;
+		adc_available = 1;
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -112,50 +127,65 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-	uint32_t adcValue = 0;
-	float voltageInput, voltageOutput;
+//	uint32_t adcValue = 0;
+//	float voltageInput, voltageOutput;
 
+	HAL_ADC_Start_IT(&hadc3);
+	HAL_TIM_Base_Start(&htim8);
+
+	printf("\r\n===============================================\r\n");
+	uint32_t before, after;
+	before = test;
+	HAL_Delay(1000);
+	after = test;
+
+	printf("%d %d\r\n", before, after);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	while (1)
 	{
-		// Démarrer l'ADC et attendre la fin de la conversion
-		HAL_ADC_Start_IT(&hadc3);
-		printf("ADC est start\r\n");
-		//HAL_ADC_PollForConversion(&hadc3, HAL_MAX_DELAY);
+		if (1 == adc_available)
+		{
+			adc_available = 0;
 
-		HAL_StatusTypeDef status;
-		status = HAL_ADC_PollForConversion(&hadc3, 1000); // Attendre jusqu'à 1000 ms
-		if(status != HAL_OK) {
-		    // Gérer l'erreur
-			printf("PAS OK\r\n");
-		    if(status == HAL_ERROR) {
-		        // Erreur spécifique à traiter
-		    	printf("ERROR\r\n");
-		    } else if(status == HAL_TIMEOUT) {
-		        // Traitement du timeout
-		    	printf("TIMEOUT\r\n");
-		    }
+			printf("ADC value = %d\r\n", adcValue);
 		}
-
-		// Lire la valeur convertie
-		adcValue = HAL_ADC_GetValue(&hadc3);
-		printf("La valeur est convertie\r\n");
-
-		// Calculer la tension d'entrée et la tension de sortie
-		voltageInput = ((float)adcValue / 4095.0f) * 6.6f - 3.3f;
-		voltageOutput = voltageInput * (230.0f / 3.3f);
-		printf("les tensions sont calculés \r\n");
-
-		// Formater et envoyer la tension de sortie via l'UART
-		printf(uartBuffer, sizeof(uartBuffer), "Tension mesurée : %.2fV\r\n", voltageOutput);
-		HAL_UART_Transmit(&huart1, (uint8_t*)uartBuffer, strlen(uartBuffer), HAL_MAX_DELAY);
-		printf("les tensions sont envoyés à l'ADC\r\n");
-
-		// Un petit délai pour éviter de saturer l'UART
-		HAL_Delay(1000);
+		// Démarrer l'ADC et attendre la fin de la conversion
+//		HAL_ADC_Start_IT(&hadc3);
+//		printf("ADC est start\r\n");
+//		//HAL_ADC_PollForConversion(&hadc3, HAL_MAX_DELAY);
+//
+//		HAL_StatusTypeDef status;
+//		status = HAL_ADC_PollForConversion(&hadc3, 1000); // Attendre jusqu'à 1000 ms
+//		if(status != HAL_OK) {
+//			// Gérer l'erreur
+//			printf("PAS OK\r\n");
+//			if(status == HAL_ERROR) {
+//				// Erreur spécifique à traiter
+//				printf("ERROR\r\n");
+//			} else if(status == HAL_TIMEOUT) {
+//				// Traitement du timeout
+//				printf("TIMEOUT\r\n");
+//			}
+//		}
+//
+//		// Lire la valeur convertie
+//		adcValue = HAL_ADC_GetValue(&hadc3);
+//		printf("La valeur est convertie\r\n");
+//
+//		// Calculer la tension d'entrée et la tension de sortie
+//		voltageInput = ((float)adcValue / 4095.0f) * 3.3f;
+//		voltageOutput = (voltageInput - 1.65f) * (460.0f / 3.3f);
+//		printf("les tensions sont calculés \r\n");
+//
+//		// Formater et envoyer la tension de sortie via l'UART
+//		printf("Tension mesurée : %.2fV\r\n", voltageOutput);
+//		printf("les tensions sont envoyés à l'ADC\r\n");
+//
+//		// Un petit délai pour éviter de saturer l'UART
+//		HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
