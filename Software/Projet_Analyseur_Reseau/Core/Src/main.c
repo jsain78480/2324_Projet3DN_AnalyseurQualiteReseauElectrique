@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "i2c.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -83,7 +84,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
 	if (ADC3 == hadc->Instance)
 	{
-		adcValue = HAL_ADC_GetValue(&hadc3);
+		adcValue = HAL_ADC_GetValue(&hadc3) ;
 		test++;
 		adc_available = 1;
 	}
@@ -125,6 +126,7 @@ int main(void)
   MX_ADC3_Init();
   MX_TIM8_Init();
   MX_USART1_UART_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 
 //	uint32_t adcValue = 0;
@@ -138,6 +140,7 @@ int main(void)
 	before = test;
 	HAL_Delay(1000);
 	after = test;
+	uint32_t test_old;
 
 	printf("%d %d\r\n", before, after);
   /* USER CODE END 2 */
@@ -150,42 +153,13 @@ int main(void)
 		{
 			adc_available = 0;
 
-			printf("ADC value = %d\r\n", adcValue);
+			// 0V -> 0 ; 3V3 => 4095 (2^12-1)
+			printf("ADC value = %d = %f (%d:%d)\r\n", adcValue, (float)(adcValue) * 3.3 / 4095.0, test, test-test_old);
+			test_old = test;
+
+			HAL_Delay(1000);
 		}
-		// Démarrer l'ADC et attendre la fin de la conversion
-//		HAL_ADC_Start_IT(&hadc3);
-//		printf("ADC est start\r\n");
-//		//HAL_ADC_PollForConversion(&hadc3, HAL_MAX_DELAY);
-//
-//		HAL_StatusTypeDef status;
-//		status = HAL_ADC_PollForConversion(&hadc3, 1000); // Attendre jusqu'à 1000 ms
-//		if(status != HAL_OK) {
-//			// Gérer l'erreur
-//			printf("PAS OK\r\n");
-//			if(status == HAL_ERROR) {
-//				// Erreur spécifique à traiter
-//				printf("ERROR\r\n");
-//			} else if(status == HAL_TIMEOUT) {
-//				// Traitement du timeout
-//				printf("TIMEOUT\r\n");
-//			}
-//		}
-//
-//		// Lire la valeur convertie
-//		adcValue = HAL_ADC_GetValue(&hadc3);
-//		printf("La valeur est convertie\r\n");
-//
-//		// Calculer la tension d'entrée et la tension de sortie
-//		voltageInput = ((float)adcValue / 4095.0f) * 3.3f;
-//		voltageOutput = (voltageInput - 1.65f) * (460.0f / 3.3f);
-//		printf("les tensions sont calculés \r\n");
-//
-//		// Formater et envoyer la tension de sortie via l'UART
-//		printf("Tension mesurée : %.2fV\r\n", voltageOutput);
-//		printf("les tensions sont envoyés à l'ADC\r\n");
-//
-//		// Un petit délai pour éviter de saturer l'UART
-//		HAL_Delay(1000);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
