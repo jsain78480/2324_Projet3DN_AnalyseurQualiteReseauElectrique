@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "dma.h"
 #include "i2c.h"
 #include "tim.h"
 #include "usart.h"
@@ -50,7 +51,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+#define ADC_BUFFER_LENGTH 1024 // Taille du buffer
+uint16_t adcBuffer[ADC_BUFFER_LENGTH]; // Déclaration du buffer pour les valeurs ADC
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -112,6 +114,9 @@ int main(void)
 	MX_ADC3_Init();
 	MX_USART1_UART_Init();
 	MX_TIM8_Init();
+
+	HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adcBuffer, ADC_BUFFER_LENGTH);
+
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -123,14 +128,14 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ADC3_Init();
+  MX_DMA_Init();
   MX_TIM8_Init();
   MX_USART1_UART_Init();
+  MX_ADC3_Init();
   MX_I2C1_Init();
+
   /* USER CODE BEGIN 2 */
 
-//	uint32_t adcValue = 0;
-//	float voltageInput, voltageOutput;
 
 	HAL_ADC_Start_IT(&hadc3);
 	HAL_TIM_Base_Start(&htim8);
