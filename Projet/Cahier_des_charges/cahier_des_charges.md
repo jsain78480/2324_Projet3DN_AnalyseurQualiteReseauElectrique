@@ -32,10 +32,10 @@ Matériels utilisés :
 - STM32
 
 Spécifications techniques : 
-- Tensions MAX = 400V
-- Courant MAX = 
+- Tensions MAX = 230V 
+- Courant MAX = 6A par phase
 - Puissances Actives MAX = 
 - Puissances Réactive MAX = 
 - Puissances Apparentes MAX = 
-
+- Montage souhaité = Etoile
 
