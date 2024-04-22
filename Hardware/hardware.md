@@ -1,3 +1,5 @@
+# Carte d'acquisition permettant de récupérer le signal électrique
+
 ## U1 : Pour calculer les résistances de l'utilisation de Capteur de la tension (LEM LV 25-P) 
 
 Selon le datasheet "Voltage Transducer LV 25-P", on sait que :
