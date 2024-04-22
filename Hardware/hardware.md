@@ -15,6 +15,17 @@ Caractèristiques techniques :
 
 ![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/42ebae67-2afa-42fd-a535-9975a1017a0a)
 
+Schéma technique : 
+
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/8e5cee4c-4cc5-4115-b8be-255dfef610d6)
+
+Dimensions du composants : 
+
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/c5bfaf82-d1ab-4d2a-9cc7-1e17e006b54c)
+
+Lien vers la datasheet : 
+
+https://www.lem.com/sites/default/files/products_datasheets/lv_25-p.pdf 
 
 Selon le datasheet "Voltage Transducer LV 25-P", on sait que :
  - Taux de conversion = 2500 : 1000
