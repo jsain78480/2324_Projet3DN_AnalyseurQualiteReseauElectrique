@@ -18,12 +18,6 @@ Tension d'entrée : V1(Vout de U1)
 Tension de sortie : V2
 Resistance variable : pour calibrer V2 à 3,3V  
 
-## U3 : MAX 6795 pour amlimenter le STM32
-Tension d'entrée : +15 V
-Tension de sortie : 3.3 V
-Pour le régulateur linéaire
-https://fr.farnell.com/analog-devices/max6795tpsd2/regulateur-lineaire-3-3v-0-3a/dp/2799272
-
 
 Tension d'entrée : Provient du traco avec +15v
 Tension de sortie : 3,3v pour alimenter le STM, l'écran, les LEDS, etc
@@ -34,5 +28,10 @@ Tension de sortie : 3,3v pour alimenter le STM, l'écran, les LEDS, etc
 
 https://controllerstech.com/i2c-lcd-in-stm32/
 
+# Carte de traitement permettant d'effectuer des calculs et d'afficher ces derniers à l'utilisateur 
+
+## U3 : Régulateur linéaire et transfo XXXX pour alimenter le STM32
+Tension d'entrée : +15 V
+Tension de sortie : 3.3 V
 
 
