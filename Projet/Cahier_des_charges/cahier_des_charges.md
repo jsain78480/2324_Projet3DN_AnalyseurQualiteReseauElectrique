@@ -1,4 +1,7 @@
-Sujet : 
+## Projet d'analyseur de réseau électrique 
+
+
+Cadrage du besoin : 
 
 Réaliser un analyseur de qualité de réseau électrique triphasée permettant :
 - De mesurer la stabilité de la tension et du courant
@@ -29,10 +32,10 @@ Matériels utilisés :
 - STM32
 
 Spécifications techniques : 
-- Tensions MAX = 400V
-- Courant MAX = 
+- Tensions MAX = 230V 
+- Courant MAX = 6A par phase
 - Puissances Actives MAX = 
 - Puissances Réactive MAX = 
 - Puissances Apparentes MAX = 
-
+- Montage souhaité = Etoile
 
