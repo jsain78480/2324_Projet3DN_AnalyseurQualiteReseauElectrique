@@ -385,6 +385,22 @@
     [
       "16213bc9-ed22-4e8b-8e21-f5cd88729472",
       "Racine"
+    ],
+    [
+      "72d653c3-8f6f-4150-b7cd-d5c98c703715",
+      "Conditionnement_Capteur_1"
+    ],
+    [
+      "a83cc724-240f-4e24-86d0-fe129e515c9d",
+      "Conditionnement_Capteur_2"
+    ],
+    [
+      "f65a2aaa-bdb9-4087-a40a-8b8d146426dc",
+      "Conditionnement_Capteur_3"
+    ],
+    [
+      "9b53e793-8acb-49d6-9671-6c75b365109f",
+      "Conditionnement_Capteur_4"
     ]
   ],
   "text_variables": {}

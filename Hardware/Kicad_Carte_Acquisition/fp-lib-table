@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Library.pretty_Traco_TMP15215")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_Traco_TMP15215.pretty")(options "")(descr ""))
+  (lib (name "Library.pretty_Conn_Coax1")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_Conn_Coax1.pretty")(options "")(descr ""))
+)
