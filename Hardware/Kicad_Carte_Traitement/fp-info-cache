@@ -1,4 +1,4 @@
-23126715185156055
+23130143118350614
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -63483,6 +63483,13 @@ Yellow 5381 Series LED
 2
 2
 Library
+OLED
+
+
+0
+4
+4
+Library
 test
 
 
@@ -87835,6 +87842,13 @@ https://www.farnell.com/cad/316865.pdf?_ga=2.37208032.177107060.1530611323-24901
 0
 48
 48
+Switch
+Tact_switch
+
+
+0
+0
+0
 Symbol
 CE-Logo_8.5x6mm_SilkScreen
 CE marking
