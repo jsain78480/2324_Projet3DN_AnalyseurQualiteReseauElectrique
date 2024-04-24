@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "New_Library.kicad_Traco")(type "KiCad")(uri "${KIPRJMOD}/New_Library.kicad_Traco.kicad_sym")(options "")(descr ""))
+  (lib (name "New_Library.kicad_Traco_sym")(type "KiCad")(uri "${KIPRJMOD}/New_Library.kicad_Traco_sym.kicad_sym")(options "")(descr ""))
+)
