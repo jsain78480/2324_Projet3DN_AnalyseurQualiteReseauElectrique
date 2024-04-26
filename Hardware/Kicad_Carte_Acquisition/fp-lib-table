@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "Library.pretty_Traco_TMP15215")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_Traco_TMP15215.pretty")(options "")(descr ""))
   (lib (name "Library.pretty_Conn_Coax1")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_Conn_Coax1.pretty")(options "")(descr ""))
+  (lib (name "Library.pretty_R_4527_M11470")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_R_4527_M11470.pretty")(options "")(descr ""))
+  (lib (name "Library.pretty_Porte_Fusible")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_Porte_Fusible.pretty")(options "")(descr ""))
 )
