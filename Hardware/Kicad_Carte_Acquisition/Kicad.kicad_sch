@@ -5,259 +5,6 @@
 	(uuid "16213bc9-ed22-4e8b-8e21-f5cd88729472")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Amplifier_Operational:OP275"
-			(pin_names
-				(offset 0.127)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "OP275"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Dual Bipolar/JFET, Audio Operational Amplifier, DIP-8/SOIC-8"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "dual opamp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "OP275_1_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "OP275_2_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "OP275_3_1"
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector:DA15_Receptacle_MountingHoles"
 			(pin_names
 				(offset 1.016) hide)
@@ -2553,22 +2300,10 @@
 		(uuid "15f41ef4-bb36-431e-aba0-14c25556d8f8")
 	)
 	(junction
-		(at 114.3 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "21d7612b-66e1-4d62-9d69-588555be10ba")
-	)
-	(junction
 		(at 116.84 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "22093759-e31f-497d-967f-51971821331e")
-	)
-	(junction
-		(at 156.21 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2d0c6a78-7541-4fab-be1e-696cde502376")
 	)
 	(junction
 		(at 168.91 100.33)
@@ -2581,18 +2316,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "328c9652-09ad-4c55-bc6b-b18ae88f63af")
-	)
-	(junction
-		(at 132.08 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "48950817-da96-4678-af85-acb0c61d77a6")
-	)
-	(junction
-		(at 132.08 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4c2ad06b-0a0e-4abd-8d3a-1399bd42a981")
 	)
 	(junction
 		(at 96.52 180.34)
@@ -2643,16 +2366,10 @@
 		(uuid "71b27e34-6b53-4412-8220-b0637c1287fa")
 	)
 	(junction
-		(at 140.97 153.67)
+		(at 160.02 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7cd59ece-7cb7-448b-abf0-275cad459582")
-	)
-	(junction
-		(at 123.19 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8ac3f43d-b067-4c22-a2f4-e81d748a759b")
+		(uuid "8ff49bd2-413b-48f0-928e-50a5d468be59")
 	)
 	(junction
 		(at 54.61 180.34)
@@ -2679,12 +2396,6 @@
 		(uuid "9a9776f4-d5a6-4e51-9c37-d8839cfcacfb")
 	)
 	(junction
-		(at 114.3 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b54442e-2f41-413f-9200-9f529006ecc8")
-	)
-	(junction
 		(at 182.88 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2695,12 +2406,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a95b2881-5045-4254-9140-016eec6759aa")
-	)
-	(junction
-		(at 105.41 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b3f3b0c6-9380-4c74-9ca4-c41ea644fdca")
 	)
 	(junction
 		(at 21.59 180.34)
@@ -2715,28 +2420,10 @@
 		(uuid "bb640fdb-8120-4f14-a320-0e7c445756d6")
 	)
 	(junction
-		(at 140.97 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c2028d1c-6199-4b79-9213-eb4ab0769dd8")
-	)
-	(junction
-		(at 123.19 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c3e79cda-c87d-482c-af4b-6c505fea87dc")
-	)
-	(junction
 		(at 54.61 167.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1e5c550-0d02-4e2c-9066-61077bd0670d")
-	)
-	(junction
-		(at 105.41 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d39c2dca-a567-4e05-bcb4-f6b4a87c69bd")
 	)
 	(junction
 		(at 191.77 151.13)
@@ -2846,6 +2533,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 95.25) (xy 160.02 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04dfbbe3-8167-437d-9300-46ac2ce29f35")
+	)
+	(wire
+		(pts
 			(xy 264.16 111.76) (xy 267.97 111.76)
 		)
 		(stroke
@@ -2906,16 +2603,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 168.91) (xy 132.08 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11f39501-8a22-44f9-b5ec-4a75147c7793")
-	)
-	(wire
-		(pts
 			(xy 111.76 95.25) (xy 115.57 95.25)
 		)
 		(stroke
@@ -2973,16 +2660,6 @@
 			(type default)
 		)
 		(uuid "1d16035f-fc0b-4125-a799-2ac08dc19939")
-	)
-	(wire
-		(pts
-			(xy 96.52 168.91) (xy 105.41 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1dd813d6-6801-4d67-b1ea-a0d20ebf3b50")
 	)
 	(wire
 		(pts
@@ -3086,16 +2763,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 153.67) (xy 123.19 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3497fef0-983b-4242-bc43-b8b0d38e7e99")
-	)
-	(wire
-		(pts
 			(xy 200.66 140.97) (xy 200.66 142.24)
 		)
 		(stroke
@@ -3176,16 +2843,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 168.91) (xy 149.86 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41a3d4e9-20df-4eb4-8f44-c8e941a14d4c")
-	)
-	(wire
-		(pts
 			(xy 54.61 173.99) (xy 54.61 180.34)
 		)
 		(stroke
@@ -3223,16 +2880,6 @@
 			(type default)
 		)
 		(uuid "4960ed91-18ae-4904-b0c7-7a143edcc4fb")
-	)
-	(wire
-		(pts
-			(xy 123.19 153.67) (xy 132.08 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4aee4ee6-bc76-4812-a2a8-4cc570614400")
 	)
 	(wire
 		(pts
@@ -3296,16 +2943,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 168.91) (xy 123.19 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58078063-6a2d-474f-9ac5-c518127db6c1")
-	)
-	(wire
-		(pts
 			(xy 238.76 151.13) (xy 200.66 151.13)
 		)
 		(stroke
@@ -3336,16 +2973,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 153.67) (xy 105.41 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6052e6f2-3e86-4a62-aacc-d0f990426c9b")
-	)
-	(wire
-		(pts
 			(xy 135.89 172.72) (xy 147.32 172.72)
 		)
 		(stroke
@@ -3353,16 +2980,6 @@
 			(type default)
 		)
 		(uuid "6d33c054-f5ae-49cd-a630-ee3834e82aec")
-	)
-	(wire
-		(pts
-			(xy 132.08 153.67) (xy 140.97 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6eeda8fd-417a-4a43-b911-704e7299fc92")
 	)
 	(wire
 		(pts
@@ -3393,16 +3010,6 @@
 			(type default)
 		)
 		(uuid "7207b0b1-09b7-4139-b202-f8358ec963c3")
-	)
-	(wire
-		(pts
-			(xy 105.41 168.91) (xy 114.3 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e2c6074-8e08-408c-8ad2-572158a9575a")
 	)
 	(wire
 		(pts
@@ -3463,16 +3070,6 @@
 			(type default)
 		)
 		(uuid "8740de43-17ee-458d-b4b9-4de0daebdc45")
-	)
-	(wire
-		(pts
-			(xy 140.97 153.67) (xy 148.59 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8796466f-5979-447b-bd04-3c6b9443fc27")
 	)
 	(wire
 		(pts
@@ -3576,16 +3173,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 153.67) (xy 114.3 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a218c075-65a2-4998-8a76-989f21ac77fc")
-	)
-	(wire
-		(pts
 			(xy 238.76 147.32) (xy 238.76 151.13)
 		)
 		(stroke
@@ -3603,16 +3190,6 @@
 			(type default)
 		)
 		(uuid "a815d076-957c-422d-b5ea-a27e74e9c9c4")
-	)
-	(wire
-		(pts
-			(xy 156.21 95.25) (xy 158.75 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9c70917-045d-4b70-85dc-3cc0ff54021c")
 	)
 	(wire
 		(pts
@@ -3716,16 +3293,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 95.25) (xy 156.21 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb9d3b8c-a428-40fe-b39b-7c541d34c40f")
-	)
-	(wire
-		(pts
 			(xy 172.72 140.97) (xy 182.88 140.97)
 		)
 		(stroke
@@ -3786,6 +3353,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 95.25) (xy 175.26 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e000507f-b888-48b3-b986-ef46c0336e61")
+	)
+	(wire
+		(pts
 			(xy 266.7 124.46) (xy 267.97 124.46)
 		)
 		(stroke
@@ -3823,16 +3400,6 @@
 			(type default)
 		)
 		(uuid "e5369ea9-105d-4459-920c-1f3a20fd7dd5")
-	)
-	(wire
-		(pts
-			(xy 132.08 168.91) (xy 140.97 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb9a81ed-e6b5-49ae-b82c-800ee175ab17")
 	)
 	(wire
 		(pts
@@ -3923,28 +3490,6 @@
 			(type default)
 		)
 		(uuid "fff3da05-c090-4e9b-9a94-6c8e25e8019c")
-	)
-	(global_label "+15V"
-		(shape input)
-		(at 148.59 153.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "18019721-f2dc-4a16-a2d4-b757e5e08f07")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 156.6552 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
 	)
 	(global_label "Vcurrent_ph1"
 		(shape input)
@@ -4102,7 +3647,7 @@
 	)
 	(global_label "+15V"
 		(shape output)
-		(at 158.75 95.25 0)
+		(at 175.26 95.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4112,7 +3657,7 @@
 		)
 		(uuid "4d6f99fc-9272-43e7-a00a-49a76d4c197d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.8152 95.25 0)
+			(at 183.3252 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4162,28 +3707,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "-15V"
-		(shape input)
-		(at 149.86 168.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "55fbbd2d-1671-41be-9a92-7c5c054e9d4b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.9252 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -4530,7 +4053,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.farnell.com/datasheets/1866272.pdf"
 			(at 124.46 91.44 0)
 			(effects
 				(font
@@ -4643,267 +4166,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:OP275")
-		(at 107.95 161.29 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0bbb4d53-8c12-4020-ad16-af3a3e37d662")
-		(property "Reference" "U4"
-			(at 107.188 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "OP275"
-			(at 107.188 162.306 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 107.95 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf"
-			(at 107.95 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Bipolar/JFET, Audio Operational Amplifier, DIP-8/SOIC-8"
-			(at 107.95 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "0f930ccd-595d-439c-8ac8-511ca84aa677")
-		)
-		(pin "2"
-			(uuid "1d337f8a-9978-4649-8abc-e0426ab1c4f0")
-		)
-		(pin "1"
-			(uuid "60150da3-288c-4ade-9306-b70ef32d362e")
-		)
-		(pin "3"
-			(uuid "bd652baf-1e94-4583-a485-1a2c21e963b6")
-		)
-		(pin "8"
-			(uuid "fc1db582-7d0f-47df-832c-1f5a9cea7ec7")
-		)
-		(pin "7"
-			(uuid "b5093bd6-4ee8-40f4-9984-5d9d887fc516")
-		)
-		(pin "5"
-			(uuid "11c8e332-d4ef-4c19-96f9-5948f27399f9")
-		)
-		(pin "6"
-			(uuid "13818a23-a716-4e8d-9beb-4d57e70983aa")
-		)
-		(instances
-			(project "Kicad"
-				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "U4")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:OP275")
-		(at 143.51 161.29 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0ccfb1f3-2509-4ec4-8bba-4428909b1bcb")
-		(property "Reference" "U8"
-			(at 142.494 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "OP275"
-			(at 142.494 162.306 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 143.51 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf"
-			(at 143.51 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Bipolar/JFET, Audio Operational Amplifier, DIP-8/SOIC-8"
-			(at 143.51 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dd87b0d5-e906-4ea3-88ed-08c83ec7464c")
-		)
-		(pin "2"
-			(uuid "ce285384-d37a-409b-8994-c6038747ca3c")
-		)
-		(pin "3"
-			(uuid "3c3d28b7-e9d3-48f6-9a62-05be7d80fe91")
-		)
-		(pin "7"
-			(uuid "af51caf7-6cf9-4379-91dc-df2dc7fa5a45")
-		)
-		(pin "5"
-			(uuid "6b1de04f-7c70-4465-8dda-a34a0f477fb2")
-		)
-		(pin "6"
-			(uuid "87118787-fd09-4c4b-852b-87548bcb87a6")
-		)
-		(pin "8"
-			(uuid "dda62f52-9cf7-474b-b3ce-14dffab0b095")
-		)
-		(pin "4"
-			(uuid "b01ebf4a-c7fa-4c15-9d23-971fd1b876b1")
-		)
-		(instances
-			(project "Kicad"
-				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "U8")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:OP275")
-		(at 134.62 161.29 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "102033ce-6130-47bc-8ee5-e14e196e4686")
-		(property "Reference" "U7"
-			(at 133.858 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "OP275"
-			(at 133.858 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 134.62 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf"
-			(at 134.62 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Bipolar/JFET, Audio Operational Amplifier, DIP-8/SOIC-8"
-			(at 134.62 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "9545b545-2135-4818-b159-5192c15f116d")
-		)
-		(pin "5"
-			(uuid "b5cb8b98-199c-4fe9-aa51-c74023093fc1")
-		)
-		(pin "1"
-			(uuid "818853e5-00e2-421b-bf65-3be463f86fa0")
-		)
-		(pin "4"
-			(uuid "47bba9d0-6f03-4d31-86ad-968ff38e9312")
-		)
-		(pin "2"
-			(uuid "d1be06df-d85b-4d15-be01-9ca5bf5d050b")
-		)
-		(pin "8"
-			(uuid "7dca27e8-b1c8-4169-8a74-7fd10978b184")
-		)
-		(pin "3"
-			(uuid "6c6451af-638e-4bb5-b557-f421e7d44f6e")
-		)
-		(pin "7"
-			(uuid "e2beddf9-ff75-4444-b05f-c0ef405f487f")
-		)
-		(instances
-			(project "Kicad"
-				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "U7")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Fuse")
 		(at 107.95 95.25 270)
 		(unit 1)
@@ -4938,7 +4200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.farnell.com/datasheets/3207641.pdf"
 			(at 107.95 95.25 0)
 			(effects
 				(font
@@ -5074,7 +4336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.farnell.com/datasheets/2832309.pdf"
 			(at 87.63 95.25 0)
 			(effects
 				(font
@@ -5138,7 +4400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.farnell.com/datasheets/2832309.pdf"
 			(at 87.63 100.33 0)
 			(effects
 				(font
@@ -5270,7 +4532,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.farnell.com/datasheets/2832309.pdf"
 			(at 25.4 25.4 0)
 			(effects
 				(font
@@ -5700,93 +4962,6 @@
 				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
 					(reference "H2")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:OP275")
-		(at 125.73 161.29 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4af0117b-c5ee-4a9c-9db3-594615117951")
-		(property "Reference" "U6"
-			(at 124.968 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "OP275"
-			(at 124.968 162.306 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 125.73 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf"
-			(at 125.73 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Bipolar/JFET, Audio Operational Amplifier, DIP-8/SOIC-8"
-			(at 125.73 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "531167a0-3dd8-4c57-8259-03e9d5f899d9")
-		)
-		(pin "3"
-			(uuid "9d8d0ea5-a9d9-4493-965d-c3a2fe7fe366")
-		)
-		(pin "6"
-			(uuid "e3aad270-b357-4706-8845-7b6db6575480")
-		)
-		(pin "2"
-			(uuid "12312c91-6f06-4604-af65-3db9bf786653")
-		)
-		(pin "1"
-			(uuid "e573500f-fe15-4bb4-a364-76bddc7db12d")
-		)
-		(pin "8"
-			(uuid "6671907b-9bc3-4379-9ad3-c3ffc82a4709")
-		)
-		(pin "5"
-			(uuid "bb9eb6ab-e2be-4867-bcd3-3e128db83a78")
-		)
-		(pin "4"
-			(uuid "069607ab-e28e-4c86-aadd-5adf5a3c3737")
-		)
-		(instances
-			(project "Kicad"
-				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "U6")
-					(unit 3)
 				)
 			)
 		)
@@ -6610,16 +5785,15 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 156.21 105.41 0)
+		(at 156.21 105.41 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "835dddab-2ecf-4ec4-af29-23cd0bfad415")
-		(property "Reference" "#FLG02"
-			(at 156.21 103.505 0)
+		(property "Reference" "#FLG03"
+			(at 156.21 107.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6628,11 +5802,12 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 156.21 100.33 0)
+			(at 152.4 109.728 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -6668,7 +5843,7 @@
 		(instances
 			(project "Kicad"
 				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "#FLG02")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -6708,7 +5883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.farnell.com/datasheets/2832309.pdf"
 			(at 26.67 68.58 0)
 			(effects
 				(font
@@ -6740,7 +5915,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 156.21 95.25 0)
+		(at 160.02 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6749,7 +5924,7 @@
 		(fields_autoplaced yes)
 		(uuid "89bfa789-2571-4ab3-aeca-a8c30f124536")
 		(property "Reference" "#FLG01"
-			(at 156.21 93.345 0)
+			(at 160.02 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6758,7 +5933,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 156.21 90.17 0)
+			(at 160.02 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6766,7 +5941,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.21 95.25 0)
+			(at 160.02 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6775,7 +5950,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 95.25 0)
+			(at 160.02 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6784,7 +5959,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 156.21 95.25 0)
+			(at 160.02 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7008,180 +6183,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:OP275")
-		(at 116.84 161.29 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "99ed43ff-a71d-40e0-98a2-e2980b0bba61")
-		(property "Reference" "U5"
-			(at 116.078 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "OP275"
-			(at 116.078 162.306 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 116.84 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf"
-			(at 116.84 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Bipolar/JFET, Audio Operational Amplifier, DIP-8/SOIC-8"
-			(at 116.84 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "b679f0b6-227c-4c03-91ff-d1d48f4d6559")
-		)
-		(pin "7"
-			(uuid "b11fbef1-a187-4196-9c41-1bc83faf422c")
-		)
-		(pin "2"
-			(uuid "721fe2f0-3da4-4a10-b3bc-2dfa99a52c79")
-		)
-		(pin "6"
-			(uuid "e5a3ce37-1fcb-48fe-8c30-d82a3d04da15")
-		)
-		(pin "4"
-			(uuid "c8c70f84-7aae-4685-b463-0a9f32c9f1be")
-		)
-		(pin "8"
-			(uuid "424f3197-e36d-4795-9470-04cdeef1bc6e")
-		)
-		(pin "5"
-			(uuid "ee223e72-5055-412c-8b9f-30653ecc29a2")
-		)
-		(pin "1"
-			(uuid "19d18bb4-d2f5-4a1d-8190-25b281ab5e6b")
-		)
-		(instances
-			(project "Kicad"
-				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "U5")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:OP275")
-		(at 99.06 161.29 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9a7011cb-3eee-43af-82ab-52d07e9295fc")
-		(property "Reference" "U3"
-			(at 98.552 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "OP275"
-			(at 98.552 162.306 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 99.06 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/OP275.pdf"
-			(at 99.06 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Bipolar/JFET, Audio Operational Amplifier, DIP-8/SOIC-8"
-			(at 99.06 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "2c5b2df8-ca8e-4bf9-a190-9fb056708b38")
-		)
-		(pin "2"
-			(uuid "d95c28a0-d562-4260-8e05-32ecc06dbe4c")
-		)
-		(pin "8"
-			(uuid "978a77d8-1f43-4e69-826f-d2c8456073cb")
-		)
-		(pin "6"
-			(uuid "976baa2e-f899-4448-a3ef-824585ecde26")
-		)
-		(pin "7"
-			(uuid "ec177e3b-8af3-4ba0-9794-f74a185802f6")
-		)
-		(pin "1"
-			(uuid "cabc8a95-335f-414d-a330-ad018020983f")
-		)
-		(pin "5"
-			(uuid "d8182d2f-46c8-4765-8ecd-b9c3ad4402e9")
-		)
-		(pin "4"
-			(uuid "dfe4d155-e007-4bc6-b9fb-a6c1c9571bb5")
-		)
-		(instances
-			(project "Kicad"
-				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "U3")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
 		(at 151.13 25.4 180)
 		(unit 1)
@@ -7216,7 +6217,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.farnell.com/datasheets/2832309.pdf"
 			(at 151.13 25.4 0)
 			(effects
 				(font
@@ -7670,7 +6671,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "0.1u"
 			(at 175.768 147.066 0)
 			(effects
 				(font
@@ -8020,7 +7021,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library.pretty_Dsub_15_Female:Dsub_15_Female_E"
 			(at 275.59 127 0)
 			(effects
 				(font
@@ -8029,7 +7030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/78-5100-2794-5%20%20887%20Series.pdf?_gl=1*1mxvjo*_ga*MTU0NjMzNTUzMi4xNzEyMjMxNjIy*_ga_15W4STQT4T*MTcxNDE3MjkzMi4xNC4xLjE3MTQxNzQzOTEuNTUuMC4w"
 			(at 275.59 127 0)
 			(effects
 				(font
@@ -8655,9 +7656,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f988507d-3e08-4241-a343-6ca2d0f0a7a5")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG02"
 			(at 168.91 98.425 0)
 			(effects
 				(font
@@ -8667,7 +7667,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 168.91 95.25 0)
+			(at 162.814 98.044 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8707,7 +7707,7 @@
 		(instances
 			(project "Kicad"
 				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "#FLG03")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -8748,7 +7748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.farnell.com/datasheets/2832309.pdf"
 			(at 88.9 25.4 0)
 			(effects
 				(font

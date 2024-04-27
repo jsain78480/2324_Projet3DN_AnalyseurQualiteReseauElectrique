@@ -72,10 +72,10 @@
 		(end 5 5)
 		(stroke
 			(width 0.1)
-			(type default)
+			(type solid)
 		)
 		(fill none)
-		(layer "F.SilkS")
+		(layer "F.CrtYd")
 		(uuid "1d6e4dd0-c8c1-47e8-8ffc-c472109beb79")
 	)
 	(fp_text user "${REFERENCE}"
@@ -92,7 +92,7 @@
 	)
 	(pad "1" thru_hole circle
 		(at -4 4)
-		(size 2 2)
+		(size 2.8 2.8)
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
@@ -100,7 +100,7 @@
 	)
 	(pad "2" thru_hole circle
 		(at -4 -4)
-		(size 2 2)
+		(size 2.8 2.8)
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
@@ -108,7 +108,7 @@
 	)
 	(pad "3" thru_hole circle
 		(at 4 -4)
-		(size 2 2)
+		(size 2.8 2.8)
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
@@ -116,7 +116,7 @@
 	)
 	(pad "4" thru_hole circle
 		(at 4 4)
-		(size 2 2)
+		(size 2.8 2.8)
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
