@@ -4311,7 +4311,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c922c33-310e-4c43-a694-c9ea063bcd60")
-		(property "Reference" "J5_Ph_230V1"
+		(property "Reference" "JB5"
 			(at 87.63 88.9 0)
 			(effects
 				(font
@@ -4360,7 +4360,7 @@
 		(instances
 			(project "Kicad"
 				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "J5_Ph_230V1")
+					(reference "JB5")
 					(unit 1)
 				)
 			)
@@ -4375,7 +4375,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23822408-9fab-4ca5-ac28-b82226f97e0d")
-		(property "Reference" "J6_Neutre_230V1"
+		(property "Reference" "JB6"
 			(at 88.138 103.632 0)
 			(effects
 				(font
@@ -4424,7 +4424,7 @@
 		(instances
 			(project "Kicad"
 				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "J6_Neutre_230V1")
+					(reference "JB6")
 					(unit 1)
 				)
 			)
@@ -4507,7 +4507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e5be3e6-d8ca-444c-bd1a-c3e7ce004dd3")
-		(property "Reference" "J1_Vphase1"
+		(property "Reference" "JB1"
 			(at 25.4 19.05 0)
 			(effects
 				(font
@@ -4556,7 +4556,7 @@
 		(instances
 			(project "Kicad"
 				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "J1_Vphase1")
+					(reference "JB1")
 					(unit 1)
 				)
 			)
@@ -5858,7 +5858,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "88f5b241-5744-4ac8-bf5d-12e1733d27c5")
-		(property "Reference" "J4_Neutre1"
+		(property "Reference" "JB4"
 			(at 26.416 71.12 0)
 			(effects
 				(font
@@ -5907,7 +5907,7 @@
 		(instances
 			(project "Kicad"
 				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "J4_Neutre1")
+					(reference "JB4")
 					(unit 1)
 				)
 			)
@@ -6192,7 +6192,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ab5dba8-3181-438b-8a44-de3f7e2b333c")
-		(property "Reference" "J1_Vphase3"
+		(property "Reference" "JB3"
 			(at 151.13 19.05 0)
 			(effects
 				(font
@@ -6241,7 +6241,7 @@
 		(instances
 			(project "Kicad"
 				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "J1_Vphase3")
+					(reference "JB3")
 					(unit 1)
 				)
 			)
@@ -7723,7 +7723,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe28e80e-2bf9-4d42-86a1-d4125e9307d7")
-		(property "Reference" "J1_Vphase2"
+		(property "Reference" "JB2"
 			(at 88.9 19.05 0)
 			(effects
 				(font
@@ -7772,7 +7772,7 @@
 		(instances
 			(project "Kicad"
 				(path "/16213bc9-ed22-4e8b-8e21-f5cd88729472"
-					(reference "J1_Vphase2")
+					(reference "JB2")
 					(unit 1)
 				)
 			)
