@@ -1520,7 +1520,7 @@
 			)
 		)
 	)
-	(global_label "+15V"
+	(global_label "-15V"
 		(shape input)
 		(at 140.97 88.9 180)
 		(fields_autoplaced yes)
