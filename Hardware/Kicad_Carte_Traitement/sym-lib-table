@@ -3,4 +3,5 @@
   (lib (name "New_Library")(type "KiCad")(uri "${KIPRJMOD}/New_Library.kicad_sym")(options "")(descr ""))
   (lib (name "OLED")(type "KiCad")(uri "${KIPRJMOD}/OLED.kicad_sym")(options "")(descr ""))
   (lib (name "switch")(type "KiCad")(uri "${KIPRJMOD}/switch.kicad_sym")(options "")(descr ""))
+  (lib (name "New_Library_OLED")(type "KiCad")(uri "${KIPRJMOD}/New_Library_OLED.kicad_sym")(options "")(descr ""))
 )

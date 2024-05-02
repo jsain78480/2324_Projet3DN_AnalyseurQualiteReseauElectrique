@@ -4,4 +4,5 @@
   (lib (name "OLED")(type "KiCad")(uri "${KIPRJMOD}/OLED.pretty")(options "")(descr ""))
   (lib (name "Switch")(type "KiCad")(uri "${KIPRJMOD}/Switch.pretty")(options "")(descr ""))
   (lib (name "Library.pretty_SUBD")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_SUBD.pretty")(options "")(descr ""))
+  (lib (name "Library.pretty_SUBD_F")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_SUBD_F.pretty")(options "")(descr ""))
 )
