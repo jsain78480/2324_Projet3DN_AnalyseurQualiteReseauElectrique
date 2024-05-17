@@ -115,7 +115,7 @@ int main(void)
 	MX_USART1_UART_Init();
 	MX_TIM8_Init();
 
-	HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adcBuffer, ADC_BUFFER_LENGTH);
+	HAL_ADC_Start_DMA(&hadc3, (uint32_t*)adcBuffer, ADC_BUFFER_LENGTH);
 
   /* USER CODE END Init */
 
