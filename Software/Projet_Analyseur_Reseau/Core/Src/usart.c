@@ -21,6 +21,10 @@
 #include "usart.h"
 
 /* USER CODE BEGIN 0 */
+uint8_t uart1_Tx_Buffer[UART_TX_BUFFER_SIZE];
+uint8_t uart1_Rx_Buffer[UART_RX_BUFFER_SIZE];
+
+int tx_Buffer_Size;
 
 /* USER CODE END 0 */
 
@@ -39,7 +43,7 @@ void MX_USART1_UART_Init(void)
 
   /* USER CODE END USART1_Init 1 */
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
+  huart1.Init.BaudRate = 1000000;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;
@@ -87,10 +91,10 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
     PB7     ------> USART1_RX
     PA9     ------> USART1_TX
     */
-    GPIO_InitStruct.Pin = VCP_RX_Pin;
+    GPIO_InitStruct.Pin = USART_TX_Pin|USART_RX_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
     HAL_GPIO_Init(VCP_RX_GPIO_Port, &GPIO_InitStruct);
 
@@ -122,9 +126,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
     PB7     ------> USART1_RX
     PA9     ------> USART1_TX
     */
-    HAL_GPIO_DeInit(VCP_RX_GPIO_Port, VCP_RX_Pin);
-
-    HAL_GPIO_DeInit(VCP_TX_GPIO_Port, VCP_TX_Pin);
+    HAL_GPIO_DeInit(VCP_RX_GPIO_Port, USART_TX_Pin|USART_RX_Pin);
 
   /* USER CODE BEGIN USART1_MspDeInit 1 */
 

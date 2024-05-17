@@ -29,12 +29,18 @@ extern "C" {
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
+#define UART_TX_BUFFER_SIZE 256
+#define UART_RX_BUFFER_SIZE 256
 
 /* USER CODE END Includes */
 
 extern UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN Private defines */
+extern uint8_t uart1_Tx_Buffer[UART_TX_BUFFER_SIZE];
+extern uint8_t uart1_Rx_Buffer[UART_RX_BUFFER_SIZE];
+
+extern int tx_Buffer_Size;
 
 /* USER CODE END Private defines */
 
