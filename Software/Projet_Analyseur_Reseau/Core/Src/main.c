@@ -30,6 +30,7 @@
 #include "stm32f7xx_hal.h"
 #include <stdio.h>
 #include <string.h>
+#include "oled.h"
 
 /* USER CODE END Includes */
 
@@ -148,6 +149,35 @@ int main(void)
 	uint32_t test_old;
 
 	printf("%d %d\r\n", before, after);
+
+	//Pour SSD1306
+	tx_Buffer_Size = snprintf((char *)uart1_Tx_Buffer, UART_TX_BUFFER_SIZE, "Simple code for SSD1306 OLED Screen\r\n");
+
+	HAL_UART_Transmit(&huart1, uart1_Tx_Buffer, tx_Buffer_Size, 10);
+		if(HAL_OK == SCREEN_SSD1306_Init(&hscreen1, &hi2c1)){
+			tx_Buffer_Size = snprintf((char *)uart1_Tx_Buffer, UART_TX_BUFFER_SIZE, "Screen Init Done\r\n");
+			HAL_UART_Transmit(&huart1, uart1_Tx_Buffer, tx_Buffer_Size, 10);
+		}
+		else{
+			tx_Buffer_Size = snprintf((char *)uart1_Tx_Buffer, UART_TX_BUFFER_SIZE, "Screen Init Error\r\n");
+			HAL_UART_Transmit(&huart1, uart1_Tx_Buffer, tx_Buffer_Size, 10);
+		}
+		int dir = 1;
+		while(1){
+			SSD1306_COLOR color = Black;
+			SCREEN_SSD1306_Fill(&hscreen1, color);
+			color = White;
+			SCREEN_SSD1306_Write_String(&hscreen1, "Hello ENSEA", Font_11x18, color);
+			hscreen1.CurrentX = 0;
+			hscreen1.CurrentY += dir;
+			if(hscreen1.CurrentY == 45) dir = -1;
+			if(hscreen1.CurrentY == 0) dir = 1;
+			HAL_GPIO_WritePin(OSC_TRIG_GPIO_Port, OSC_TRIG_Pin, SET);//Write pin, ça depend de la carte
+			SCREEN_SSD1306_Update_Screen(&hscreen1);
+			HAL_GPIO_WritePin(OSC_TRIG_GPIO_Port, OSC_TRIG_Pin, RESET);//Write pin, ça depend de la carte
+			HAL_Delay(20);
+		}
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
