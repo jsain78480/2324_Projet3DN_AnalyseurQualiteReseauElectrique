@@ -5,4 +5,5 @@
   (lib (name "Library.pretty_R_4527_M11470")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_R_4527_M11470.pretty")(options "")(descr ""))
   (lib (name "Library.pretty_Porte_Fusible")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_Porte_Fusible.pretty")(options "")(descr ""))
   (lib (name "Library.pretty_Dsub_15_Female")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_Dsub_15_Female.pretty")(options "")(descr ""))
+  (lib (name "Library.pretty_SUBD_F")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty_SUBD_F.pretty")(options "")(descr ""))
 )

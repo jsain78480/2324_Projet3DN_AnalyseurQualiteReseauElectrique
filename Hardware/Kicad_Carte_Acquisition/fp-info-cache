@@ -1,4 +1,4 @@
-23048023611731491
+23049738288375436
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -63440,6 +63440,13 @@ R_4527_M11470E
 0
 2
 2
+Library.pretty_SUBD_F
+618015231321
+618015231321-2
+Connector
+0
+17
+17
 Library.pretty_Traco_TMP15215
 TMP-15-215E
 
