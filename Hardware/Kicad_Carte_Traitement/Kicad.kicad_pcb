@@ -12835,8 +12835,36 @@
 			(width 0.05)
 			(type default)
 		)
+<<<<<<< Updated upstream
 		(layer "Edge.Cuts")
 		(uuid "24aef863-3fdc-4dce-beaa-0c39d7605917")
+=======
+		(layer "F.Cu")
+		(net 2)
+		(uuid "003d40d0-12f6-4eba-9a05-cc8140ca06b2")
+	)
+	(gr_line
+		(start 122.500369 95.625618)
+		(end 232.6 95.7)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "2188cdd6-e729-4832-87ae-2b30031f91aa")
+	)
+	(gr_line
+		(start 122.4 21.9)
+		(end 232.42 22.07)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "ac075f60-3e5f-4879-9541-35a1de327f4b")
+>>>>>>> Stashed changes
 	)
 	(gr_arc
 		(start 235.953911 92.000901)
@@ -12932,6 +12960,16 @@
 				(thickness 0.1)
 			)
 		)
+	)
+	(gr_line
+		(start 236.03068 25.559997)
+		(end 235.999465 91.8)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "52c100b2-f0eb-4486-a2ec-d3dfa92b6bd3")
 	)
 	(segment
 		(start 145.695 72.475)
