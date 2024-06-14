@@ -14,7 +14,7 @@ Nous avons ajouté différentes catégories dans notre GITHUB :
    https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/tree/main/Hardware 
 2) Software intègre toute la programmation logiciel liée à STM32 Cube IDE :
    https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/tree/main/Software
-3) Projet intègre toute la méthodologie projet (Planning, organigramme, cahier des charges, spécifications techniques, analyse des risques, ETC) :
+3) Projet intègre toute la méthodologie projet (Planning, cahier des charges) :
    https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/tree/main/Projet
 
 ## Résumé du projet
