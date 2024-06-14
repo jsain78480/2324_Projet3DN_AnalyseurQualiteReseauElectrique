@@ -172,9 +172,9 @@ int main(void)
 			hscreen1.CurrentY += dir;
 			if(hscreen1.CurrentY == 45) dir = -1;
 			if(hscreen1.CurrentY == 0) dir = 1;
-			HAL_GPIO_WritePin(OSC_TRIG_GPIO_Port, OSC_TRIG_Pin, SET);//Write pin, ça depend de la carte
+			HAL_GPIO_WritePin(OSC_TRIG_GPIO_Port, OSC_TRIG_Pin, SET);
 			SCREEN_SSD1306_Update_Screen(&hscreen1);
-			HAL_GPIO_WritePin(OSC_TRIG_GPIO_Port, OSC_TRIG_Pin, RESET);//Write pin, ça depend de la carte
+			HAL_GPIO_WritePin(OSC_TRIG_GPIO_Port, OSC_TRIG_Pin, RESET);
 			HAL_Delay(20);
 		}
 
