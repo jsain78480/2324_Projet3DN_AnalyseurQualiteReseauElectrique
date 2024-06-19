@@ -7,13 +7,13 @@ Nous avons listé ci-dessous l'ensemble des composants avec les caractéristique
 
 ![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/228c4c20-5b84-4ecf-a232-68d2b73c8073)
 
-![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/fefa8342-d05d-4d42-a5dd-ae7611b05020)
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/c75116f6-4a2e-49bb-878a-28bebee0055c)
 
-![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/1c1b1886-186c-4e6b-97ec-d530ae3a3413)
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/cbce22a7-8da6-4b5c-b526-fd91ce98d18c)
 
-![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/9708e514-8e2a-42c6-a9f2-6c6c9643cce8)
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/a2efb74c-9107-4a31-858c-e7b30dbc3d6a)
 
-![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/9c641126-3c51-43c4-b8ad-69456f7e819b)
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/0741aebb-4fb5-47ba-bfea-b6f36995388e)
 
 ## Capteurs de tensions 
 Référence : LEM LV 25-P 
