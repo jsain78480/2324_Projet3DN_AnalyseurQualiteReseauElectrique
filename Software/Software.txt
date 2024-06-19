@@ -1,4 +1,4 @@
-Pour échantillonner un signal sinusoïdal de 50 Hz sur un ADC d'un microcontrôleur STM32 avec une plage de tension de -3.3V à 3.3V et d'afficher la valeur de la tension sur l'UART, voici les paramètres que nous avons choisi pour configurer l'ADC :
+Pour échantillonner un signal sinusoïdal de 50 Hz sur un ADC d'un microcontrôleur STM32 avec une plage de tension de -3.3V à 3.3V et d'afficher la valeur de la tension sur l'UART,  les paramètres choisi pour configurer l'ADC :
 
 Résolution (nombre de bits) : Pour une plage de tension de -3.3V à 3.3V, une résolution de 12 bits est suffisante, ce qui permet d'avoir une précision d'environ 0.8 mV par échantillon.
 
@@ -8,39 +8,7 @@ Mode de fonctionnement : ADC en mode de conversion unique (single conversion mod
 
 Fréquence d'échantillonnage (Fs) : Pour échantillonner un signal sinusoïdal de 50 Hz, il faut respecter le théorème d'échantillonnage de Nyquist qui stipule que la fréquence d'échantillonnage doit être au moins deux fois la fréquence maximale du signal d'entrée, donc une fréquence d'échantillonnage d'au moins 100 Hz est nécessaire. Cependant, pour des raisons de précision et de traitement du signal, on a choisi 1kHz, avec ARR = 1000, PSC = 216
 
-Déclenchement de la conversion : Configurez le déclenchement de la conversion de l'ADC à l'aide d'une minuterie interne ou externe. Vous pouvez choisir de déclencher la conversion à intervalles réguliers ou en fonction d'un événement externe, selon vos besoins.
+Déclenchement de la conversion : Configurez le déclenchement de la conversion de l'ADC à l'aide d'une minuterie interne ou externe. choisir de déclencher la conversion à intervalles réguliers 
 
-Une fois que l'ADC a échantillonné le signal, vous pouvez convertir la valeur numérique obtenue en tension en utilisant la formule :
+Une fois que l'ADC a échantillonné le signal,  convertir la valeur numérique obtenue en tension 
 
-Tension (en volts)
-=
-Valeur num
-e
-ˊ
-rique
-2
-R
-e
-ˊ
-solution
-−
-1
-×
-Vref
-Tension (en volts)= 
-2 
-R 
-e
-ˊ
- solution
- −1
-Valeur num 
-e
-ˊ
- rique
-​
- ×Vref
-
-Ensuite, vous pouvez transmettre cette valeur de tension sur l'UART pour l'affichage.
-
-Assurez-vous de consulter la documentation spécifique de votre microcontrôleur STM32 et de son ADC pour obtenir des détails sur la configuration exacte des paramètres mentionnés ci-dessus.
