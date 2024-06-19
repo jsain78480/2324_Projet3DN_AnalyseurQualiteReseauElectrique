@@ -47,10 +47,5 @@ Resistance variable : pour calibrer V2 à 3,3V
 Tension d'entrée : Provient du traco avec +15v
 Tension de sortie : 3,3v pour alimenter le STM, l'écran, les LEDS, etc
 
-## Contrôleur LCD I2C PCF8574 
-
-## Ecran LCD LM016L
-
-https://controllerstech.com/i2c-lcd-in-stm32/
 
 
