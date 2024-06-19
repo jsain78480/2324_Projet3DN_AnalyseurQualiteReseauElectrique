@@ -36,9 +36,11 @@ Vous pouvez trouver le planing du projet dans le répertoire projet.
 
 ## Le PCB d'acquisition
 
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/3de1ecc5-b0db-4ab3-bb61-42c808ce285b)
 
 
 ## Le PCB de traitement
 
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/2e41ba63-e224-46d1-a38f-5f118541f459)
 
 
