@@ -3,6 +3,18 @@
 On a besoin d'une carte d'acquisition pour récupérer les tensions et les courants des 3 phases et du neutre de notre réseau triphasé. Pour se faire, nous allons faire un premier PCB qui sera appelé "Carte d'acquisition".
 Nous avons listé ci-dessous l'ensemble des composants avec les caractéristiques techniques et les raisons du choix de ces derniers.
 
+## Maquettage pour recherche des caractéristiques éléctriques
+
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/228c4c20-5b84-4ecf-a232-68d2b73c8073)
+
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/fefa8342-d05d-4d42-a5dd-ae7611b05020)
+
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/1c1b1886-186c-4e6b-97ec-d530ae3a3413)
+
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/9708e514-8e2a-42c6-a9f2-6c6c9643cce8)
+
+![image](https://github.com/jsain78480/2324_Projet3DN_AnalyseurQualiteReseauElectrique/assets/144773577/9c641126-3c51-43c4-b8ad-69456f7e819b)
+
 ## Capteurs de tensions 
 Référence : LEM LV 25-P 
 Repères U1-U2-U3 
